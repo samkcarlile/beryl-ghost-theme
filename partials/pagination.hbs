@@ -1,0 +1,11 @@
+<nav role="navigation">
+  <ul>
+    {{#if prev}}
+    <li><a href="{{page_url prev}}">&#8592; Newer</a></li>
+    {{/if}}
+    <li>{{page}}</li>
+    {{#if next}}
+    <li><a href="{{page_url next}}">Older &#8594;</a></li>
+    {{/if}}
+  </ul>
+</nav>

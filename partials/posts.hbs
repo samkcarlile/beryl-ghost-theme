@@ -1,0 +1,14 @@
+<div class="posts">
+  {{#foreach posts}}
+  <div class="post">
+    <h3><a href="{{url}}">{{title}}</a></h3>
+    <small>By {{author}} - <i>Posted on {{date published_at format="MMMM DD, YYYY"}}</i></small>
+    <div class="content">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>{{excerpt 30}}...
+    </div>
+  </div>
+  {{#unless @last}}
+  <hr>
+  {{/unless}}
+  {{/foreach}}
+</div>

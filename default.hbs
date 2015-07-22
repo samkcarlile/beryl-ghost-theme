@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Bitter:400,700|Raleway' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+    <link rel="stylesheet" href="{{asset "css/style.css"}}" charset="utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {{ghost_head}}
+    <title>{{@blog.title}}</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <div class="container">
+          <h1><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
+          <small>{{@blog.description}}</small>
+          <hr>
+          <ul>
+            <li><a href="https://twitter.com/samkcarlile"><img src="{{asset "images/twitter.png"}}" alt="Twitter"></a></li>
+            <li><a href="https://instagram.com/samkcarlile/"><img src="{{asset "images/instagram.png"}}" alt="Instagram"></a></li>
+            <li><a href="mailto:samkcarlile@gmail.com"><img src="{{asset "images/email.png"}}" alt="Email"></a></li>
+          </ul>
+        </div>
+      </div>
+      {{{body}}}
+    </div>
+    <footer>
+      <div class="footer">
+        &copy; Sam Carlile and samkcarlile.com, 2015
+      </div>
+    </footer>
+    {{ghost_foot}}
+  </body>
+</html>
